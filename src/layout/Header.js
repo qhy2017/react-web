@@ -10,9 +10,6 @@ function Header(props) {
         className: "trigger",
         onClick: () => click(),
       })}
-      {props.children}
-
-
 
     </Layout.Header>
   );
