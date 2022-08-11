@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.div_1 {
+  height: 100vh;
+  max-height: 100vh;
+  /* background-color: green; */
+  /* background-color: red; */
+}
+
+.div_2 {
+  margin-left: 20px;
+  height: 100%;
+ 
+}
+#root {
+  height: 100%;
+  background-color: rebeccapurple;
+
+}
+
+
+#components-layout-demo-custom-trigger .trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+	height: 32px;
+	background: hsla(0, 0%, 100%, 0.2);
+	margin: 16px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 32px;
+	word-spacing: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
