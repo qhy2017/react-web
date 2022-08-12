@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
-function ContentBody() {
+function ContentBody(props) {
   return (
     <div>
+      <hr/>
       <Outlet />
     </div>
   );

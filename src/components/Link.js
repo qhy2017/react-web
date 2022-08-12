@@ -6,7 +6,6 @@ class Link extends Component {
   }
 
   render() {
-    console.log(this)
     return <p style={{textAlign: "center",fontSize: "30px"}}>welcom to Link</p>;
   }
 }

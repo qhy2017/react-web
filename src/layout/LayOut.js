@@ -59,7 +59,6 @@ class LayOut extends Component {
     // style={{background: 'red'}}
     //className= [] classNames
     // console.log(this);
-
     return (
       <Layout
         id="components-layout-demo-custom-trigger"
@@ -69,6 +68,10 @@ class LayOut extends Component {
           collapsible
           // collapsedWidth='0'
           collapsed={this.state.collapsed}
+          trigger={React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+            className: "trigger",
+            onClick: () => {},
+          })}
           onCollapse={(collapsed) => this.setCollapsed(collapsed)}
         >
           <div className="logo" title="hello world!">
@@ -123,11 +126,11 @@ class LayOut extends Component {
             }}
           >
             <Routes>
-              <Route path="/" element={<ContentBody />}>
+              <Route path="/" element={<ContentBody  collapsed={this.state.collapsed}/>}>
                 <Route path="btn" element={<Btn />} />
                 <Route path="link" element={<Link />} />
               </Route>
-              <Route path="link2" element={<Li />} />
+                <Route path="link2" element={<Li />} />
             </Routes>
           </Content>
         </Layout>

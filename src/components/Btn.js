@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Layout, Menu, Button, DatePicker, Space, Input, message } from "antd";
-import HookLink from "./HookLink";
-import Link from "./Li";
+// import HookLink from "./HookLink";
+// import Link from "./Li";
 message.config({
   duration: 1,
   maxCount: 1,
@@ -9,7 +9,6 @@ message.config({
 class Btn extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = { defaultValue: "你好呀！" };
   }
 

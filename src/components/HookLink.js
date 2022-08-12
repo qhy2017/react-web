@@ -4,8 +4,6 @@ import { connect } from "react-redux";
 
 function HookLink(props) {
   let { link, text ,onClick} = props;
-  console.log('HookLink');
-  console.log(props);
   const navigate = useNavigate();
   function linkSkip() {
     //权限判断

@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
 import { configureStore } from "@reduxjs/toolkit";
 
+
+//都说人间苦，有难唯有自渡
 function counter(state = 0, action) {
   switch (action.type) {
     case "INCREMENT":
